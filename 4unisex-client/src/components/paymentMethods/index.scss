@@ -1,0 +1,24 @@
+.payment-method {
+  background-color: var(--black-80);
+  & h3 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--anton-font);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  & .payment-method-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    & .icon {
+      font-size: 40px;
+    }
+    align-items: center;
+    justify-content: center;
+    & p {
+      margin: 0px;
+      padding: 20px 20px;
+    }
+  }
+}

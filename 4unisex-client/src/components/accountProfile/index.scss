@@ -1,0 +1,99 @@
+.ac-profile {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-clip);
+
+
+  .ac-profile__header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    background-color: var(--prim-color);
+    border-radius: 10px 10px 0 0;
+    color: var(--white-color);
+    padding: 16px 40px;
+
+    img {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .ac-profile__header-name {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-family: var(--anton-font);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+
+      .ac-profile__header-code {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        cursor: pointer;
+
+        span {
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 24px;
+          text-align: left;
+          font-family: var(--inter-font);
+          cursor: text;
+        }
+      }
+    }
+  }
+
+  .ac-profile__body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    padding: 16px 40px 40px 40px;
+    gap: 16px;
+    background-color: var(--background-clip);
+    border-radius: 0 0 10px 10px;
+
+    .ac-profile__body-active {
+      border: solid 1px var(--prim-color) !important;
+      box-shadow: 2px 3px 5px rgba($color: #000000, $alpha: 0.3);
+    }
+
+    .ac-profile__body-item {
+      width: calc(100% - 20px);
+      padding: 16px 24px;
+      border-radius: 20px;
+      border: 1px solid var(--test-icon);
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        border: solid 1px var(--prim-color) !important;
+        box-shadow: 2px 3px 5px rgba($color: #000000, $alpha: 0.3);
+      }
+
+      span {
+        font-family: var(--anton-font);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: var(--white-color);
+        text-transform: uppercase;
+      }
+    }
+  }
+}

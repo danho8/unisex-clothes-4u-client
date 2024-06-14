@@ -1,0 +1,239 @@
+.d-o {
+  padding: 0 40px;
+  color: var(--white-color);
+  .d-o__h3 {
+    font-family: var(--anton-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    text-align: left;
+  }
+  .d-o__information {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--test-icon);
+    padding-bottom: 10px;
+    margin-top: 20px;
+    .d-o__information-left {
+      display: flex;
+      flex-direction: column;
+      .d-o__information-left__code,
+      .d-o__information-left__date,
+      .d-o__information-left__status,
+      .d-o__information-left__note {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+        gap: 5px;
+        font-family: var(--inter-font);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+
+        span:nth-child(2) {
+          font-family: var(--inter-font);
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 24px;
+          text-align: left;
+        }
+      }
+    }
+    .d-o__information-right {
+      display: flex;
+      flex-direction: column;
+      .d-o__information-right__payment,
+      .d-o__information-right__custommer,
+      .d-o__information-right__phone,
+      .d-o__information-right__address {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-bottom: 10px;
+        gap: 5px;
+        font-family: var(--inter-font);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+
+        span:nth-child(2) {
+          font-family: var(--inter-font);
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 24px;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .d-o__product {
+    margin-top: 20px;
+    .d-o__product-counter {
+      font-family: var(--anton-font);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      span {
+        font-weight: 400;
+      }
+    }
+    table {
+      width: 100%;
+      margin-top: 10px;
+      border-collapse: collapse;
+      thead {
+        tr {
+          th {
+            font-family: var(--inter-font);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: left;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--test-icon);
+          }
+        }
+      }
+      tbody {
+        tr {
+          font-family: var(--anton-font);
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          text-transform: uppercase;
+          td:nth-child(1) {
+            display: flex;
+            .d-o__product-name {
+              .d-o__product-name__describe {
+                display: flex;
+                gap: 10px;
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 22px;
+                span {
+                  border-radius: 4px;
+                  border: 1px solid var(--white-color);
+                  padding: 0 7px;
+                }
+              }
+            }
+          }
+          td:nth-child(2) {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+          }
+          td:nth-child(3) {
+            font-family: var(--inter-font);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: right;
+          }
+          td {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-align: left;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--test-icon);
+            .d-o__product-img {
+              width: 50px;
+              height: 50px;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .d-o__product-name {
+              margin-left: 10px;
+              span {
+                display: block;
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .d-o__payment {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-transform: uppercase;
+    .d-o__payment-infor {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      .d-o__payment-infor__total,
+      .d-o__payment-infor__discount,
+      .d-o__payment-infor__ship {
+        display: flex;
+        justify-content: space-between;
+        span {
+          font-family: var(--anton-font);
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          text-align: left;
+        }
+        span:nth-child(2) {
+          font-family: var(--inter-font);
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          text-align: right;
+          color: var(--text-sub-color);
+        }
+      }
+      .d-o__payment-infor__discount {
+        span:nth-child(2) {
+          color: var(--prim-color);
+        }
+      }
+    }
+    .d-o__payment-total {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 50%;
+      border-top: 1px solid var(--white-color);
+      div {
+        display: flex;
+        justify-content: space-between;
+        font-family: var(--anton-font);
+        margin-top: 10px;
+        span {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18px;
+          text-align: left;
+        }
+        span:nth-child(2) {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: right;
+        }
+      }
+      .d-o__payment-total-VAT {
+        font-family: var(--inter-font);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        color: var(--text-sub-color);
+      }
+    }
+  }
+}

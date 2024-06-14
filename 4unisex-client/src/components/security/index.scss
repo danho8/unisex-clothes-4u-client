@@ -1,0 +1,78 @@
+.security {
+  background-color: var(--black-80);
+  border-radius: 14px;
+  padding: 40px;
+  h3 {
+    font-family: var(--anton-font);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .security-desciption {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    .security-desciption-clock {
+      color: var(--prim-color);
+    }
+    svg {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+    }
+    div {
+      p {
+        font-family: var(--inter-font);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin: 0;
+      }
+    }
+  }
+  .security_update-password {
+    margin: 40px 0 0 0;
+    // custom label antd
+    .ant-form-item-label {
+      label {
+        color: var(--white-color);
+      }
+    }
+    .ant-input-affix-wrapper {
+      border-radius: 14px !important;
+      height: 48px !important;
+    }
+    .security_update-password-update {
+      display: flex;
+      justify-content: space-between;
+      .security_update-password-item {
+        width: calc(50% - 10px);
+        border-radius: 34px;
+      }
+    }
+
+    .security_update-password-item {
+      color: var(--white-color);
+    }
+    .security_update-password-action {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      .security_update-password-button {
+        // custom color button antd
+        display: flex;
+        background-color: var(--prim-color);
+        border-radius: 100px;
+        padding: 20px 36px 20px 36px;
+        font-family: var(--inter-font);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        align-items: center;
+      }
+    }
+  }
+}

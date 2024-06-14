@@ -1,0 +1,102 @@
+.bestSellerItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: all 0.3s;
+
+    .bestSellerItem__image {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            max-width: 600px;
+            min-height: 450px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 48px;
+        }
+    }
+
+    .bestSellerItem__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+
+        .bestSellerItem__content__title {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 48px;
+            color: var(--white-color);
+            margin-bottom: 5px;
+            font-family: var(--anton-font);
+        }
+
+
+        .bestSellerItem__content__description {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            color: var(--white-color);
+        }
+    }
+
+    & .bestSellerItem_btn-detail {
+        position: absolute;
+        bottom: 10%;
+        top: 10%;
+        right: 10%;
+        left: 10%;
+        background-color: #1C1C1CCC;
+        place-items: center;
+        border-radius: 14px;
+        display: none;
+        border-radius: 30px;
+
+    }
+
+    animation: slide-fwd-center linear 1s;
+}
+
+.bestSellerItem:hover {
+    transform: translateY(-10px);
+}
+
+.bestSellerItem:hover .bestSellerItem__content__title {
+    color: var(--prim-color);
+}
+
+.bestSellerItem:hover .bestSellerItem_btn-detail {
+    display: grid;
+    animation: slide-fwd-center linear 1s;
+}
+
+@keyframes slide-fwd-center {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(160px);
+        transform: translateZ(160px);
+    }
+}
+
+@media (max-width: 576px) {
+    .bestSellerItem {
+        margin-bottom: 80px;
+        min-height: 0px;
+        & .bestSellerItem__image {
+            min-height: 0px;
+        }
+        & .bestSellerItem__content {
+            margin-top: 30px;
+        }
+    }
+}

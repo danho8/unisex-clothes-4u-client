@@ -1,0 +1,21 @@
+.content-banner-home-btn {
+    margin-top: 40px;
+    padding: 18px 36px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--prim-color);
+    color: var(--white-color);
+    font-weight: 600;
+    border-radius: 100px;
+    font-size: 15px;
+
+    & .content-banner-home-btn-icon {
+        font-size: 20px;
+        transition: 0.3s;
+    }
+
+    &:hover .content-banner-home-btn-icon {
+        transform: translateX(5px);
+    }
+}

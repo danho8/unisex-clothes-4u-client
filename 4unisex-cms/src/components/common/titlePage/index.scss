@@ -1,0 +1,15 @@
+.wrapper-title-page {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    & .wrapper-title-page-divider {
+        width: 8px;
+        height: 35px;
+        border-radius: 8px;
+    }
+
+    & h2 {
+        font-size: 32px;
+    }
+}

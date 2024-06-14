@@ -1,0 +1,153 @@
+.my-order {
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background-color: var(--black-80);
+  color: var(--white-color);
+  border-radius: 14px;
+  padding: 40px 0;
+  table {
+    background-color: var(--black-80);
+  }
+  & h3 {
+    font-family: var(--anton-font);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    padding: 0 0 8px 0;
+    margin-left: 40px;
+  }
+
+  & .payment-method-content {
+    border-radius: 44px;
+    background-color: var(--black-80);
+    color: var(--white-color);
+    &.payment-method-content__tabs {
+      & .ant-tabs-nav {
+        background-color: var(--black-80);
+        &:nth-child(1) {
+          div {
+            div {
+              margin: 0;
+              display: flex;
+              justify-content: space-around;
+            }
+          }
+        }
+
+        & .ant-tabs-tab {
+          color: var(--white-color);
+          font-family: var(--inter-font);
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+        }
+      }
+    }
+    .ant-tabs-nav-list {
+      width: 100%;
+      justify-content: space-between;
+      font-family: var(--anton-font);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      div {
+        margin: 0;
+      }
+      .ant-tabs-tab-btn {
+        color: var(--white-color);
+      }
+      .ant-tabs-tab-active {
+        div {
+          color: var(--prim-color);
+        }
+        &:hover {
+          color: var(--prim-color);
+        }
+      }
+
+      .ant-tabs-ink-bar {
+        background-color: var(--prim-color);
+      }
+    }
+    & .ant-table-content {
+      background-color: var(--black-80);
+      color: var(--white-color);
+    }
+    .payment-method-tabs__table {
+      .ant-table-thead th {
+        background-color: var(--black-80); /* Thay đổi màu nền header */
+        color: var(--white-color);
+        font-family: var(--inter-font);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+      .ant-table-tbody td {
+        background-color: var(--black-80); /* Thay đổi màu nền header */
+        color: var(--white-color);
+        font-family: var(--inter-font);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+      .ant-pagination {
+        display: flex;
+        align-items: center;
+        &li {
+          font-size: 16px;
+        }
+        .ant-pagination-item-active {
+          background-color: transparent !important;
+          border-color: transparent !important;
+          a {
+            border-radius: 100px;
+            color: var(--white-color) !important;
+            background-color: var(--prim-color) !important;
+          }
+        }
+        .ant-pagination-item {
+          margin: 0 5px;
+          height: auto !important;
+          font-size: 15px;
+          a {
+            border-radius: 100px;
+            color: var(--black-color);
+            background-color: var(--white-color);
+            border-color: var(--white-color);
+            padding: 5px 13px;
+          }
+        }
+        .ant-pagination-item-link {
+          color: var(--white-color);
+        }
+      }
+    }
+  }
+}
+.my-order-title-btn-table {
+  border-radius: 100px;
+}
+
+.my-order-title-delivered {
+  border: 1px solid #ffb200 !important;
+  span {
+    color: #ffb200;
+  }
+}
+
+.my-order-title-back-product {
+  border: 1px solid var(--prim-color) !important;
+  span {
+    color: var(--prim-color);
+  }
+}
+
+.my-order-title-sent-product {
+  border: 1px solid #34b53a !important;
+  span {
+    color: #34b53a;
+  }
+}

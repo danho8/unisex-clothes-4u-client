@@ -1,0 +1,36 @@
+.wrapper-product-actions-content-form {
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // gap: 20px;
+    & .wrapper-product-actions-content-block {
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+
+    & .wrapper-product-actions-content-form_group-btn {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: flex-end;
+        padding-top: 30px;
+
+        & .add {
+            background-color: #1055DB;
+            color: #fff;
+            padding: 14px 16px;
+            border-radius: 14px;
+            font-weight: 600;
+        }
+
+        & .draft {
+            border: 1px solid #1055DB;
+            background-color: #fff;
+            color: #1055DB;
+            padding: 14px 16px;
+            border-radius: 14px;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,151 @@
+.main-discount-code {
+  background-color: #1c1c1ccc;
+  padding: 40px 40px;
+  border-radius: 14px;
+
+  & h3 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--anton-font);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  & .group-code {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+
+    & .code-item {
+      display: flex;
+      align-items: center;
+      background-color: var(--white-color);
+      border-radius: 14px;
+      width: 40%;
+      position: relative;
+      margin-right: 50px;
+
+      & .code-item-left {
+        background-color: var(--prim-color);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 30%;
+        justify-content: space-evenly;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 25px 0px;
+
+        & span {
+          font-size: 32px;
+          font-family: var(--anton-font);
+          text-transform: uppercase;
+        }
+      }
+
+      & h3 {
+        color: var(--white-color);
+        font-size: 10px;
+        font-family: var(--anton-font);
+      }
+    }
+
+    & .code-item-right {
+      padding: 10px;
+      font-size: 15px;
+      padding: 15px;
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      & h4 {
+        color: #0e0d0d;
+        font-size: 14px;
+      }
+
+      & .code-item-right-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+
+        & p {
+          color: #7f8a98;
+          font-size: 12px;
+          margin: 8px 0;
+        }
+
+        & span {
+          color: #f02a4e;
+          font-size: 12px;
+        }
+
+        & .stamp {
+          background: var(--prim-color);
+          position: absolute;
+          left: 15px;
+          bottom: 15px;
+          border-radius: 4px;
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: 200;
+          font-family: var(--anton-font);
+          color: var(--white-color);
+          padding: 2px 10px;
+          cursor: pointer;
+        }
+
+        & .icon-plus {
+          width: 36px;
+          height: 36px;
+          position: absolute;
+          top: 30%;
+          right: 10px;
+          background-color: var(--prim-color-light);
+          color: var(--text-sub-color);
+          border: none !important;
+          cursor: pointer;
+          border-radius: 100px;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  & .main-discount-code-pagination {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+
+    & a:hover {
+      background-color: var(--white-color);
+      border-radius: 50%;
+    }
+
+    & .ant-pagination-item {
+      border-radius: 50%;
+      background-color: var(--white-color);
+    }
+
+    & .ant-pagination-item-link {
+      font-size: 24px;
+      color: white;
+    }
+
+    & .ant-pagination .ant-pagination-item-active {
+      background-color: var(--prim-color);
+      border-radius: 50%;
+      color: var(--white-color);
+      border: none;
+    }
+  }
+}

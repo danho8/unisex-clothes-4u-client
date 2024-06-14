@@ -1,0 +1,35 @@
+.content-banner-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    & h3 {
+        font-size: 36px;
+        font-family: var(--anton-font);
+        font-weight: 400;
+        color: var(--white-color);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.ant-breadcrumb-link,
+.ant-breadcrumb-separator,
+.content-banner-product-breadcrumb-item {
+    color: var(--white-color) !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+}
+
+li:last-child span span,
+li:last-child span a {
+    color: var(--prim-color) !important;
+}

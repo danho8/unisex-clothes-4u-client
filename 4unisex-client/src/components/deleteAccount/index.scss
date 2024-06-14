@@ -1,0 +1,40 @@
+.delete-account {
+    background-color: rgba(28, 28, 28, 0.8);
+    padding: 40px 40px;
+    border-radius: 14px;
+
+    & h3 {
+        font-size: 20px;
+        font-weight: 400;
+        font-family: var(--anton-font);
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    & .delete-account-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        font-size: 16px;
+        margin: 0px;
+        gap: 15px;
+        & .icon-delete {
+            font-size:30px;
+            color:var(--prim-color);
+        }
+        & p{
+            margin: 0px;
+        } 
+    }
+    & button{
+        width: 210px;
+        height: 60px;
+        border-radius: 100px;
+        background-color: var(--prim-color);
+        color: var(--white-color);
+        margin: 40px 0px;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+}

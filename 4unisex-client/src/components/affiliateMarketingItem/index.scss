@@ -1,0 +1,40 @@
+.ami-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 20px;
+  padding: var(--default-padding-size);
+  .ami-item {
+    width: calc(100% / 3);
+    text-align: center;
+    justify-content: flex-start;
+    // max-width: 432px;
+    padding: 40px 10px 20px 10px;
+    gap: 36px;
+    border-radius: 14px;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto;
+    }
+    h3 {
+      font-family: var(--anton-font);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+    }
+    p {
+      font-family: var(--inter-font);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+}

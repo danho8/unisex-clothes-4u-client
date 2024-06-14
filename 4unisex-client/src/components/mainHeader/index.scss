@@ -1,0 +1,139 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px var(--default-padding-size);
+  color: var(--white-color);
+
+  & .main-header-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  & .main-header-actions-icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  & .main-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  & .show-mobile {
+    display: none;
+  }
+}
+
+.ant-popover-inner {
+  background-color: #1c1c1c !important;
+  border-radius: 14px;
+  width: auto;
+  max-width: 236px;
+  padding: 14px !important;
+}
+
+.popup-user {
+  background-color: #1c1c1c;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  & h3 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--anton-font);
+    color: var(--white-color);
+    text-transform: uppercase;
+  }
+
+  & p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-sub-color);
+    padding-bottom: 10px;
+    border-bottom: 1px solid #252525;
+  }
+
+  & a {
+    color: var(--text-sub-color);
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+
+    &:hover {
+      color: var(--white-color);
+    }
+  }
+
+  & button {
+    padding: 10px 24px;
+    background-color: transparent;
+    border: 1px solid #bfbfbf;
+    color: var(--white-color);
+    border-radius: 100px;
+    font-weight: 400;
+  }
+  &.no-auth a {
+    margin-bottom: unset;
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+  }
+}
+
+// responsive
+
+@media screen and (max-width: 768px) {
+  .main-header {
+    padding: 10px 20px;
+  }
+
+  .main-header-menu {
+    display: none !important;
+  }
+
+  .disappear-mobile {
+    display: none !important;
+  }
+
+  .show-mobile {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-header {
+    padding: 10px 10px;
+    gap: 10px;
+    & .main-header-actions {
+      gap: 10px;
+    }
+  }
+
+  .main-header-menu {
+    display: none !important;
+  }
+
+  .disappear-mobile {
+    display: none !important;
+  }
+
+  .show-mobile {
+    display: block !important;
+  }
+}

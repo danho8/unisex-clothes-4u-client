@@ -1,0 +1,28 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.image-gallery-slide.image-gallery-center {
+
+  & .image-gallery-image {
+    border-radius: 14px !important;
+    margin-bottom: 10px;
+    width: 100% !important;
+    height: 400px !important;
+    object-fit: contain;
+
+  }
+}
+
+.thumbnail-img {
+  width: 90px !important;
+  height: 90px !important;
+  border-radius: 14px;
+  object-fit: contain;
+}
+
+.image-gallery-thumbnail:hover,
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  border-radius: 16px;
+  border: 2px solid var(--prim-color);
+  padding: 1px;
+}

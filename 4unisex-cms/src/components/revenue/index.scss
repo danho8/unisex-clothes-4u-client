@@ -1,0 +1,13 @@
+.wrapper-revenue {
+    & .wrapper-revenue-content {
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 3px 10px #0000000D;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: flex-end;
+    }
+}

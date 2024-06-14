@@ -1,0 +1,61 @@
+.submit-mail {
+    background-image: url('/img/home/submitMail.png');
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .submit-mail-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        & h3 {
+            color: var(--prim-color);
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        & p {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 36px;
+            font-family: var(--anton-font);
+            color: var(--white-color);
+        }
+
+        & .submit-mail-content-form {
+            padding: 0 80px 0 20px;
+            background-color: var(--white-color);
+            min-width: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 40px;
+            height: 50px;
+            position: relative;
+            border: 1px solid var(--prim-color);
+
+            & input {
+                flex: 1;
+
+                &::placeholder {
+                    color: var(--text-sub-color);
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+
+            & .submit-mail-content-form-icon {
+                position: absolute;
+                color: var(--prim-color);
+                height: 60px;
+                width: 77px;
+                right: -15px;
+                cursor: pointer;
+            }
+        }
+    }
+}

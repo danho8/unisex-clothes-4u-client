@@ -1,0 +1,9 @@
+.wrapper-default-layout {
+    background-color: #f8f8f8;
+    min-height: 100vh;
+
+    & .wrapper-default-layout-content {
+        margin-top: 70px;
+        padding: 20px;
+    }
+}

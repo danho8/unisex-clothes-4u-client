@@ -1,0 +1,20 @@
+.banner-home {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(100px);
+  background-color: rgba(255, 0, 0, 0.5);
+  overflow-y: scroll;
+
+  & .banner-home-overlay {
+    width: 100%;
+    background-color: #000000cc;
+
+    & .banner-home-overlay-content {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+    }
+  }
+}
